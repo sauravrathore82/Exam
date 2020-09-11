@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Even Numbers</title>
+<script language = "javascript" type = "text/javascript">
+function evennum()
+{
+var numbers = [0,1,12,13,4,5,26,27,8,39,10];
+
+ document.write(numbers+"<h4>Even numbers in array</h4>");
+for(i=0;i<numbers.length;i++)
+{
+if(numbers[i]%2 == 0)
+document.write(numbers[i]+"<br>");
+}
+}
+</script>
+</head>
+<body>
+<h2>Even Numbers</h2>
+<div id = "even">
+<h3> Array Elements </h3>
+<script>evennum();</script>
+</div>
+</body>
+</html>

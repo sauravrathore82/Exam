@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Duplicates</title>
+<script language = "javascript" type = "text/javascript">
+var numbers = [0,1,12,13,13,5,26,27,8,39,0];
+document.write("<h2>Array Duplicates</h2>");
+document.write("The Array...<br><br>");
+document.write(numbers+"<br><br>");
+var arr1 = {};
+var duplicate = [];
+ numbers.forEach(function (item) {
+ if(!arr1[item])
+ arr1[item] = 0;
+ arr1[item] += 1;
+ })
+ for (var ele in arr1) {
+ if(arr1[ele] >= 2) {
+ duplicate.push(ele);
+ }
+ }
+ document.write("The Duplicates...<br><br>");
+document.write(duplicate);
+</script>
+</head>
+<body>
+</body>
+</html>

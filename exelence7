@@ -1,0 +1,10 @@
+var response = '';
+$.ajax({ type: "GET",
+ url: "http://www.example.com/api/get/1",
+ async: false,
+ success : function(text)
+ {
+ response = text;
+ }
+});
+alert(response);

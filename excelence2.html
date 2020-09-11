@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script type = "text/javascript">
+
+ function validate() {
+
+ if( document.form1.firstname.value == "" ) {
+ alert( "Please provide your name!" );
+ document.form1.firstname.focus() ;
+ return false;
+ }
+ if(!document.form1.checkme.checked) {
+ alert( "Please check the checkbox" );
+ document.form1.checkme.focus() ;
+ return false;
+ }
+
+ return( true );
+ }
+
+</script>
+<body>
+ <form name = "form1" onsubmit = "return(validate());">
+ <table cellspacing = "2" cellpadding = "2" >
+
+ <tr>
+ <td align = "right">First Name</td>
+ <td><input type = "text" name = "firstname" /></td>
+ </tr>
+ <tr>
+ <td><input type = "checkbox" name = "checkme" /></td>
+ <td><input type = "submit" value = "Submit" /></td>
+ </tr>
+ </table>
+
+ </form>
+ </body>
